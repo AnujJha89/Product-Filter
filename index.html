@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gupta Electronics & Fashion</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Gupta Electronics</h1>
+        <p>Find Affordable and High Quality Products</p>
+    </div>
+
+    <div class="container">
+        <div class="controls">
+            <div>
+                <label><strong>→</strong> Sort By:</label>
+                <select id="sort-select">
+                    <option value="default">Default</option>
+                    <option value="price-asc">Price: Low to High</option>
+                    <option value="price-desc">Price: High to Low</option>
+                    <option value="name-asc">Name: A to Z</option>
+                    <option value="name-desc">Name: Z to A</option>
+                    <option value="rating-asc">Rating: Low to High</option>
+                    <option value="rating-desc">Rating: High to Low</option>
+                </select>
+            </div>
+
+            <div>
+                <label><strong>→</strong> Category:</label>
+                <select id="filter-select">
+                    <option value="all">All</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="fashion">Fashion</option>
+                    <option value="home">Home & Living</option>
+                    <option value="sports">Sports & Fitness</option>
+                </select>
+            </div>
+
+            <div class="count">
+                Total: <span id="count-display">0</span> products
+            </div>
+        </div>
+
+        <div class="products" id="products-grid">
+            <!-- Products will be added here by JavaScript -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
